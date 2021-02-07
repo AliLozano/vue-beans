@@ -1,5 +1,4 @@
-import { createInitializerDecorator, GenericBean } from "@vue-beans/beans";
-import { Decorator } from 'vue-beans/src/types';
+import { createInitializerDecorator, Decorator, GenericBean } from "@vue-beans/beans";
 
 function isPromise(value: any): value is Promise<unknown> {
     return Boolean(value && typeof value.then === 'function');

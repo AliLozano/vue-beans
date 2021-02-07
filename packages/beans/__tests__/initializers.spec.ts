@@ -1,5 +1,4 @@
-import { addInitializer, createInitializerDecorator } from "../src";
-import { BeanConstructor, BEFORE_SETUP } from "../src/types";
+import { BeanConstructor, BEFORE_SETUP, addInitializer, createInitializerDecorator } from "../src";
 
 describe('addInitializer', () => {
     test('Test add initializer ', () => {

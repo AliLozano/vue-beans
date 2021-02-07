@@ -1,6 +1,5 @@
 import { watch, WatchOptions } from 'vue';
-import { createInitializerDecorator, GenericBean } from "@vue-beans/beans";
-import { Decorator } from 'vue-beans/src/types';
+import { Decorator, createInitializerDecorator, GenericBean } from "@vue-beans/beans";
 
 export function Watch<T extends GenericBean<T>>(prop: (obj: T) => unknown, options?: WatchOptions): Decorator<T> {
     return createInitializerDecorator<T>((instance, constructor, callback, isStatic) => {

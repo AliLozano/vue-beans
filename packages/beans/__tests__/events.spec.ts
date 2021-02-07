@@ -1,4 +1,4 @@
-import { useEventsbus } from "../src";
+import { useEventsbus } from "@vue-beans/beans";
 import { watch } from "vue";
 import { nextTick } from "process";
 

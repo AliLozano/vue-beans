@@ -1,6 +1,5 @@
-import { InjectionManager } from "@vue-beans/injections";
+import { BeanConstructorInjectable, INJECTOR_IDENTIFIER, InjectionManager } from "@vue-beans/injections";
 import { Ref } from "vue";
-import { BeanConstructorInjectable, INJECTOR_IDENTIFIER } from "../src/types";
 
 describe('InjectionManager', () => {
     test('test registerBeanGlobal', () => {
