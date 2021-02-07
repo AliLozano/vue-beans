@@ -1,0 +1,2 @@
+export { createComponent } from './component';
+

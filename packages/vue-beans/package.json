@@ -1,0 +1,33 @@
+{
+  "name": "vue-beans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "dist/vue-beans.esm-bundler.js",
+  "types": "dist/compiler-core.d.ts",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creavity-io/vue-beans.git",
+    "directory": "packages/vue-beans"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "Ali Lozano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creavity-io/vue-beans/issues"
+  },
+  "homepage": "https://github.com/creavity-io/vue-beans/tree/master/packages/beans#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "vue": "^3.0.5"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.5"
+  }
+}

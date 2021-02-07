@@ -1,0 +1,32 @@
+import { useEventsbus } from "../src";
+import { watch } from "vue";
+import { nextTick } from "process";
+
+describe('useEventBus', () => {
+    test('Test that event bus is created', () => {
+        const eventbus = useEventsbus({saved: null})
+        let saved = false;
+        watch(() => eventbus.saved, function () {
+            saved = true;
+        })
+        eventbus.saved();
+
+        nextTick(() => {
+            expect(saved).toBe(true);
+        });
+    });
+
+    test('Test that event bus with event value', () => {
+        const eventbus = useEventsbus({saved: String});
+
+        let saved: string | undefined = "hi";
+        watch(() => eventbus.saved, function (e) {
+            saved = e.value;
+        })
+        eventbus.saved("bye");
+
+        nextTick(() => {
+            expect(saved).toBe("bye");
+        });
+    });
+})
