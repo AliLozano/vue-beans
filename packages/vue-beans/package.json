@@ -1,6 +1,6 @@
 {
   "name": "vue-beans",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "module": "dist/vue-beans.esm-bundler.js",
@@ -28,6 +28,6 @@
     "vue": "^3.0.5"
   },
   "peerDependencies": {
-    "vue": "^3.0.5"
+    "vue": "0.0.1"
   }
 }

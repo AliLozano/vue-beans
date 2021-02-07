@@ -92,8 +92,8 @@ async function main() {
   if (!skipBuild && !isDryRun) {
     await run('yarn', ['build', '--release'])
     // test generated dts files
-    step('\nVerifying type declarations...')
-    await run('yarn', ['test-dts-only'])
+    // step('\nVerifying type declarations...')
+    // await run('yarn', ['test-dts-only'])
   } else {
     console.log(`(skipped)`)
   }
