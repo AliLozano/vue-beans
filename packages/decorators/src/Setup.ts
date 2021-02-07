@@ -1,5 +1,4 @@
-import { createInitializerDecorator, GenericBean } from "@vue-beans/beans";
-import { Decorator } from 'vue-beans/src/types';
+import { Decorator, createInitializerDecorator, GenericBean } from "@vue-beans/beans";
 
 export function Setup<T extends GenericBean<T>>(): Decorator<T> {
     return createInitializerDecorator<T>((instance, constructor, callback, isStatic) => {

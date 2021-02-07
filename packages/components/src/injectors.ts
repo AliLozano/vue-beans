@@ -1,5 +1,5 @@
 import { Prop, Ref } from 'vue';
-import { createLazyProp, GenericBean } from "vue-beans/src";
+import { createLazyProp, GenericBean } from "@vue-beans/beans";
 import { useProps } from "./functions";
 import { useService } from "@vue-beans/injections";
 

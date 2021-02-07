@@ -5,6 +5,12 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/injections/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/components/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/decorators/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/vite-plugin/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/vue-beans/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/beans/dist" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

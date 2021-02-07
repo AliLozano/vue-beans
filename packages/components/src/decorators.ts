@@ -11,7 +11,7 @@ import {
 } from 'vue';
 import { ComponentInternalInstance, ComponentOptionsMixin } from 'vue';
 import { createInitializerDecorator, GenericBean, Reactive } from "@vue-beans/beans";
-import { Decorator } from 'vue-beans/src/types';
+import { Decorator } from 'vue-beans';
 import { ComponentClass, createComponent } from "./component";
 
 export function Component(options?: ComponentOptionsMixin) {

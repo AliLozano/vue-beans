@@ -1,5 +1,4 @@
-import { createInitializerDecorator } from "@vue-beans/beans";
-import { Decorator } from "vue-beans/src/types";
+import { Decorator, createInitializerDecorator } from "@vue-beans/beans";
 
 type ReturnHandler = boolean | unknown;
 
