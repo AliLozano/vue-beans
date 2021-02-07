@@ -1,10 +1,10 @@
 {
   "name": "@vue-beans/injections",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
-  "module": "dist/beans.esm-bundler.js",
-  "types": "dist/compiler-core.d.ts",
+  "module": "dist/injections.esm-bundler.js",
+  "types": "dist/injections.d.ts",
   "files": [
     "index.js",
     "dist"
@@ -12,7 +12,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AliLozano/vue-beans.git",
-    "directory": "packages/beans"
+    "directory": "packages/injections"
   },
   "keywords": [
     "vue"
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/AliLozano/vue-beans/issues"
   },
-  "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/beans#readme",
+  "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/injections#readme",
   "devDependencies": {
     "jest": "^26.6.3",
     "vue": "^3.0.5"

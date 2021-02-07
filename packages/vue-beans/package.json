@@ -1,10 +1,10 @@
 {
   "name": "vue-beans",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "module": "dist/vue-beans.esm-bundler.js",
-  "types": "dist/compiler-core.d.ts",
+  "types": "dist/vue-beans.d.ts",
   "files": [
     "index.js",
     "dist"
@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/beans#readme",
   "dependencies": {
-    "@vue-beans/beans": "0.0.4",
-    "@vue-beans/components": "0.0.4",
-    "@vue-beans/injections": "0.0.4",
-    "@vue-beans/decorators": "0.0.4",
-    "@vue-beans/vite-plugin": "0.0.4"
+    "@vue-beans/beans": "0.0.5",
+    "@vue-beans/components": "0.0.5",
+    "@vue-beans/injections": "0.0.5",
+    "@vue-beans/decorators": "0.0.5",
+    "@vue-beans/vite-plugin": "0.0.5"
   },
   "devDependencies": {
     "jest": "^26.6.3",

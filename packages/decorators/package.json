@@ -1,10 +1,10 @@
 {
   "name": "@vue-beans/decorators",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
-  "module": "dist/beans.esm-bundler.js",
-  "types": "dist/compiler-core.d.ts",
+  "module": "dist/decorators.cjs.js",
+  "types": "dist/decorators.esm-bundler.js",
   "files": [
     "index.js",
     "dist"
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/AliLozano/vue-beans/issues"
   },
-  "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/beans#readme",
+  "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/decorators#readme",
   "devDependencies": {
     "jest": "^26.6.3",
     "vue": "^3.0.5"

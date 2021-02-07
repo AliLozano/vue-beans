@@ -1,10 +1,10 @@
 {
   "name": "@vue-beans/beans",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "module": "dist/beans.esm-bundler.js",
-  "types": "dist/compiler-core.d.ts",
+  "types": "dist/beans.d.ts",
   "files": [
     "index.js",
     "dist"
