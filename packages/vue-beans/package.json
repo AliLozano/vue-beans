@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creavity-io/vue-beans.git",
+    "url": "git+https://github.com/AliLozano/vue-beans.git",
     "directory": "packages/vue-beans"
   },
   "keywords": [
@@ -20,9 +20,16 @@
   "author": "Ali Lozano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creavity-io/vue-beans/issues"
+    "url": "https://github.com/AliLozano/vue-beans/issues"
   },
-  "homepage": "https://github.com/creavity-io/vue-beans/tree/master/packages/beans#readme",
+  "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/beans#readme",
+  "dependencies": {
+    "@vue-beans/beans": "0.0.1",
+    "@vue-beans/components": "0.0.1",
+    "@vue-beans/injections": "0.0.1",
+    "@vue-beans/decorators": "0.0.1",
+    "@vue-beans/vite-plugin": "0.0.1"
+  },
   "devDependencies": {
     "jest": "^26.6.3",
     "vue": "^3.0.5"
