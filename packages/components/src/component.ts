@@ -1,6 +1,5 @@
 import { SetupContext, Component as VueComponent, watch } from 'vue';
 import { BeanConstructor, createBean, GenericBean, defineGetter, getDescriptors, wrapFields } from "../../beans/src/";
-import {  } from "../../beans/src/utils";
 
 
 export type ComponentClass<T extends GenericBean<T>> = (new () => T) & {
