@@ -1,6 +1,6 @@
 {
   "name": "@vue-beans/decorators",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "module": "dist/beans.esm-bundler.js",
@@ -28,6 +28,6 @@
     "vue": "^3.0.5"
   },
   "peerDependencies": {
-    "vue": "0.0.2"
+    "vue": "^3.0.5"
   }
 }

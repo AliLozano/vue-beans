@@ -158,10 +158,7 @@ function updateDeps(pkg, depType, version) {
   const deps = pkg[depType]
   if (!deps) return
   Object.keys(deps).forEach(dep => {
-    if (
-      dep === 'vue' ||
-      (dep.startsWith('@vue') && packages.includes(dep.replace(/^@vue\//, '')))
-    ) {
+    if (dep === 'vue-beans' || (dep.startsWith('@vue-beans') && packages.includes(dep.replace(/^@vue-beans\//, '')))) {
       console.log(
         chalk.yellow(`${pkg.name} -> ${depType} -> ${dep}@${version}`)
       )
