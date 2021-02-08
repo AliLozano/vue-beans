@@ -1,10 +1,10 @@
-import { useEventsbus } from "@vue-beans/beans";
+import { useEventBus } from "@vue-beans/beans";
 import { watch } from "vue";
 import { nextTick } from "process";
 
 describe('useEventBus', () => {
     test('Test that event bus is created', () => {
-        const eventbus = useEventsbus({saved: null})
+        const eventbus = useEventBus({saved: null})
         let saved = false;
         watch(() => eventbus.saved, function () {
             saved = true;
@@ -17,7 +17,7 @@ describe('useEventBus', () => {
     });
 
     test('Test that event bus with event value', () => {
-        const eventbus = useEventsbus({saved: String});
+        const eventbus = useEventBus({saved: String});
 
         let saved: string | undefined = "hi";
         watch(() => eventbus.saved, function (e) {

@@ -16,7 +16,7 @@ function addEventType(eventBus: Record<string, unknown>, name: string, newValue:
 }
 
 // eslint-disable-next-line import/prefer-default-export
-export function useEventsbus<T extends EventDefinition>(events: T): Readonly<EventBus<T>> {
+export function useEventBus<T extends EventDefinition>(events: T): Readonly<EventBus<T>> {
   const eventBus: Record<string, unknown> = shallowReactive({});
   Object.keys(events).forEach((key) => {
     addEventType(eventBus, key)
