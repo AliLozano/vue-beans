@@ -5,7 +5,7 @@ import { BeanConstructor, createBean } from "@vue-beans/beans";
 
 export function loadHrm() {
   // @ts-ignore
-  if (process.env.NODE_ENV === 'development') {
+  if (process.env.NODE_ENV === 'development' && typeof __VUE_BEANS_HRM__ === 'undefined') {
     const managers: Set<InjectionManager> = new Set()
 
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment

@@ -13,6 +13,7 @@ export function vueBeansPlugin(pattern = /.*(service|api|component)\.ts/): Plugi
 
       const output = [oldCode.replace('export default', '')]
       output.push(`\nconst service = ${match[1]};\n`,
+          `import { loadHrm } from "vue-beans"; loadHrm();\n`, // TODO:  this should only in main
           `service.prototype.__hrmId='${id}';\n`,
           `export default service;\n`,
           `if (import.meta.hot) {`,
@@ -22,7 +23,6 @@ export function vueBeansPlugin(pattern = /.*(service|api|component)\.ts/): Plugi
       )
       // console.log(output.join(''));
       return { code: output.join(''), etag: '', map: null }
-    } // TODO: Inject en el main import hrm from 'vue-beans/injectors'; hrm()
-    // for enable injects.
+    }
   }
 }
