@@ -10,8 +10,7 @@ import {
   onUpdated,
 } from 'vue';
 import { ComponentInternalInstance, ComponentOptionsMixin } from 'vue';
-import { createInitializerDecorator, GenericBean, Reactive } from "@vue-beans/beans";
-import { Decorator } from 'vue-beans';
+import { Decorator, createInitializerDecorator, GenericBean, Reactive } from "@vue-beans/beans";
 import { ComponentClass, createComponent } from "./component";
 
 export function Component(options?: ComponentOptionsMixin) {
