@@ -1,6 +1,6 @@
 {
   "name": "@vue-beans/beans",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "",
   "main": "index.js",
   "module": "dist/beans.esm-bundler.js",
