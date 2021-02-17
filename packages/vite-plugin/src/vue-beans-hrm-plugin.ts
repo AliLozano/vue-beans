@@ -1,8 +1,8 @@
 import { Plugin, TransformResult } from 'vite';
 
-export function vueBeansPlugin(pattern = /.*(service|api|component)\.ts/): Plugin {
+export function vueBeansHRMPlugin(pattern = /.*(service|api|component)\.ts/): Plugin {
   return {
-    name: 'vite:vue-beans',
+    name: 'vite:vue-beans-hrm',
     transform(oldCode: string, id: string): Promise<TransformResult> | TransformResult | undefined {
       if(!pattern.test(id)) return undefined;
       const classMatch = /export default class ([a-zA-Z0-9]+)/g.exec(oldCode)
