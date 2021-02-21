@@ -1,27 +1,4 @@
-import { LazyProp, createLazyProp, loadLazyFields } from "../src/lazy";
-
-describe('createLazyProp', () => {
-    test('Test create lazy prop ', () => {
-        const getterFn = jest.fn(() => 10);
-        const setterFn = jest.fn((value: number) => {});
-        const getter = jest.fn((name: string, instance: Foo) => getterFn);
-        const setter = jest.fn((name: string, instance: Foo) => setterFn);
-
-        class Foo {
-            bar = createLazyProp(getter, setter)
-        }
-
-        const instance = new Foo()
-
-        expect(instance.bar).toBeInstanceOf(LazyProp)
-
-        const lazyProp = instance.bar as unknown as LazyProp<number>
-        expect(lazyProp.getter).toBe(getter)
-        expect(lazyProp.setter).toBe(setter)
-
-    })
-});
-
+import { createLazyProp, loadLazyFields } from "../src/lazy";
 
 describe('loadLazyFields', () => {
     test('Test that lazy props are replaced', () => {
