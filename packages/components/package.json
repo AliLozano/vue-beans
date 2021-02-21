@@ -1,6 +1,6 @@
 {
   "name": "@vue-beans/components",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "",
   "main": "index.js",
   "module": "dist/components.esm-bundler.js",
@@ -23,6 +23,9 @@
     "url": "https://github.com/AliLozano/vue-beans/issues"
   },
   "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/components#readme",
+  "dependencies": {
+    "@vue-beans/beans": "0.0.18"
+  },
   "devDependencies": {
     "jest": "^26.6.3",
     "vue": "^3.0.5"
