@@ -34,7 +34,7 @@ export function createLazyProp<T, B = GenericBean<unknown>>(
  */
 export function loadLazyFields<T extends GenericBean<T>>(instance: T): T {
   Object.entries(instance)
-      .filter(([_, value]) => (value as any)[LAZY_GETTER])
+      .filter(([_, value]) => value && (value as any)[LAZY_GETTER])
       .forEach(([key, value]) => {
         const lazyInjector = (value as unknown) as LazyProp<unknown, T>;
         const getter = lazyInjector[LAZY_GETTER](key, instance);
