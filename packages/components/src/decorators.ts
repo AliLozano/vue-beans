@@ -13,8 +13,7 @@ import { ComponentInternalInstance, ComponentOptionsMixin } from 'vue';
 import { Decorator, createInitializerDecorator, GenericBean, Reactive } from "@vue-beans/beans";
 import { ComponentClass, createComponent } from "./component";
 
-export function Component(options?: ComponentOptionsMixin) {
-  console.warn('DEPRECATED: You should use static way to pass options.')
+export function RawComponent(options?: ComponentOptionsMixin) {
   function decorator<B, T extends ComponentClass<B>>(KComponent: T): T {
     if (options) {
       Object.assign(KComponent, options);
@@ -24,8 +23,7 @@ export function Component(options?: ComponentOptionsMixin) {
   return decorator;
 }
 
-export function ReactiveComponent(options?: ComponentOptionsMixin) {
-  console.warn('DEPRECATED: You should use static way to pass options and @Reactive() annotation.')
+export function Component(options?: ComponentOptionsMixin) {
   function decorator<B, T extends ComponentClass<B>>(KComponent: T): T {
     Reactive(KComponent)
     if (options) {
@@ -35,6 +33,12 @@ export function ReactiveComponent(options?: ComponentOptionsMixin) {
   }
   return decorator;
 }
+
+export function ReactiveComponent(options?: ComponentOptionsMixin) {
+  return Component(options)
+}
+
+
 
 export function createHook(
   hook: (h: () => boolean | void, target?: ComponentInternalInstance | null) => unknown,

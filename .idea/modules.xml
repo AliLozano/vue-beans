@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/vue-gravity.iml" filepath="$PROJECT_DIR$/.idea/vue-gravity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vue-beans.iml" filepath="$PROJECT_DIR$/.idea/vue-beans.iml" />
     </modules>
   </component>
 </project>
