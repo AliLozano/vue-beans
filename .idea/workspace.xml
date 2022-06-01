@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="267e8a0b-07b1-4b98-b9ba-52777436c922" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/beans/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/beans/src/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/decorators/__tests__/Watch.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/decorators/__tests__/Watch.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/decorators/src/CatchException.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/decorators/src/CatchException.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +145,7 @@
       <workItem from="1618529430931" duration="13000" />
       <workItem from="1618529464904" duration="1673000" />
       <workItem from="1619075214239" duration="674000" />
-      <workItem from="1654056826391" duration="9757000" />
+      <workItem from="1654056826391" duration="10711000" />
     </task>
     <servers />
   </component>
