@@ -1,6 +1,6 @@
 {
   "name": "@vue-beans/vite-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "module": "dist/vite-plugin.esm-bundler.js",
@@ -25,12 +25,12 @@
   "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/vite-plugin#readme",
   "devDependencies": {
     "jest": "^26.6.3",
-    "vue": "^3.0.5",
+    "vue": "^3.2.36",
     "vite": "^2.0.0-beta.60",
     "es-module-lexer": "^0.3.25"
   },
   "peerDependencies": {
-    "vue": "^3.0.5",
+    "vue": "^3.2.36",
     "vite": "^2.0.0-beta.60"
   }
 }
