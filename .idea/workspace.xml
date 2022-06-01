@@ -3,6 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="267e8a0b-07b1-4b98-b9ba-52777436c922" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/beans/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/beans/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/decorators/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/decorators/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/injections/__tests__/functions.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/injections/__tests__/functions.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/injections/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/injections/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/injections/src/functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/injections/src/functions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vite-plugin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vite-plugin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/vue-beans/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vue-beans/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,17 +38,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/ali/code/personal/vue-beans",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Users/ali/code/personal/vue-beans/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ali/code/personal/vue-beans&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/ali/code/personal/vue-beans/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ali/code/personal/vue-beans/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/beans/__tests__" />
@@ -55,18 +66,17 @@
       <recent name="$PROJECT_DIR$/packages/beans" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.release">
-    <configuration name="remapFunctionsToClosures.Test that functions of and objects are converted to closures" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.test">
+    <configuration name="injectRef" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$/packages/beans" />
+      <working-dir value="$PROJECT_DIR$/packages/injections" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/packages/beans/__tests__/builders.spec.ts" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/packages/injections/__tests__/functions.spec.ts" />
       <test-names>
-        <test-name value="remapFunctionsToClosures" />
-        <test-name value="Test that functions of and objects are converted to closures" />
+        <test-name value="injectRef" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -112,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.injectRef" />
         <item itemvalue="npm.release" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="Jest.remapFunctionsToClosures.Test that functions of and objects are converted to closures" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +154,7 @@
       <workItem from="1618529430931" duration="13000" />
       <workItem from="1618529464904" duration="1673000" />
       <workItem from="1619075214239" duration="674000" />
-      <workItem from="1654056826391" duration="2936000" />
+      <workItem from="1654056826391" duration="6963000" />
     </task>
     <servers />
   </component>
