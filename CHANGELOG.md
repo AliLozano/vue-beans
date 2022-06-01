@@ -1,3 +1,7 @@
+## [0.1.6](https://github.com/AliLozano/vue-beans/compare/v0.1.5...v0.1.6) (2022-06-01)
+
+
+
 ## [0.1.5](https://github.com/AliLozano/vue-beans/compare/v0.1.2...v0.1.5) (2022-06-01)
 
 

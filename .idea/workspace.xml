@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="267e8a0b-07b1-4b98-b9ba-52777436c922" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/beans/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/beans/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/components/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/components/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/decorators/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/decorators/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/injections/__tests__/functions.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/injections/__tests__/functions.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/injections/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/injections/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/injections/src/functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/injections/src/functions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vite-plugin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vite-plugin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/vue-beans/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/vue-beans/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/beans/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/beans/src/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/decorators/__tests__/Watch.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/decorators/__tests__/Watch.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +58,7 @@
       <recent name="$PROJECT_DIR$/packages/beans" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.release">
     <configuration name="injectRef" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -122,9 +114,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.release" />
         <item itemvalue="npm.test" />
         <item itemvalue="Jest.injectRef" />
-        <item itemvalue="npm.release" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
       </list>
@@ -154,7 +146,7 @@
       <workItem from="1618529430931" duration="13000" />
       <workItem from="1618529464904" duration="1673000" />
       <workItem from="1619075214239" duration="674000" />
-      <workItem from="1654056826391" duration="6963000" />
+      <workItem from="1654056826391" duration="9757000" />
     </task>
     <servers />
   </component>
