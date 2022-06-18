@@ -1,6 +1,6 @@
 {
   "name": "@vue-beans/decorators",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "",
   "main": "index.js",
   "module": "dist/decorators.esm-bundler.js",
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/decorators#readme",
   "dependencies": {
-    "@vue-beans/beans": "0.1.7"
+    "@vue-beans/beans": "0.1.8"
   },
   "devDependencies": {
     "jest": "^26.6.3",
