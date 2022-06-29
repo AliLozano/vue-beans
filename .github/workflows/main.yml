@@ -27,6 +27,10 @@ jobs:
       - name: Eslint check
         run: yarn lint
 
+      - name: Run Tests
+        if: always()
+        run: yarn test
+
       - name: Build
         if: always()
         run: yarn build
