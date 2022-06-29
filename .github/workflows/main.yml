@@ -19,17 +19,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: lts/gallium
-          cache: 'npm'
+          cache: 'yarn'
 
       - name: NPM Install
-        run: npm install
+        run: yarn install
 
       - name: Eslint check
-        run: npm run lint
+        run: yarn lint
 
       - name: Build
         if: always()
-        run: npm run build
+        run: yarn build
 
 
 
