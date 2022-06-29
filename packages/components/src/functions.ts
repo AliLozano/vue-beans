@@ -9,7 +9,9 @@ function getVueInstance(): ComponentInternalInstance {
   return instance;
 }
 
-export function defineProps<T extends ComponentPropsOptions>(props: T) { return props; }
+export function defineProps<T extends ComponentPropsOptions>(props: T) {
+  return props;
+}
 
 export function useProps<T extends ComponentPropsOptions>(props: T): ExtractPropTypes<T> {
   return getVueInstance().props as ExtractPropTypes<T>;
@@ -26,4 +28,3 @@ export function useSlots(): Record<string, unknown> {
 export function useEmit<E = EmitsOptions>(options: E): SetupContext<E>['emit'] {
   return getVueInstance().emit as SetupContext<E>['emit'];
 }
-

@@ -2,7 +2,6 @@
 import { isProxy, isRef, reactive, shallowReactive } from 'vue';
 import { getDescriptors } from './utils';
 
-
 /**
  * Convert every function of the object to closure, with this you can make
  * const fn = this.makeSomething;

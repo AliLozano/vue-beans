@@ -10,42 +10,37 @@ import {
   onUpdated,
 } from 'vue';
 import { ComponentInternalInstance, ComponentOptionsMixin } from 'vue';
-import { Decorator, createInitializerDecorator, GenericBean, Reactive } from "@vue-beans/beans";
-import { ComponentClass, createComponent } from "./component";
+import { Decorator, createInitializerDecorator, GenericBean, Reactive } from '@vue-beans/beans';
+import { ComponentClass, createComponent } from './component';
 
 export function RawComponent(options?: ComponentOptionsMixin) {
   function decorator<B, T extends ComponentClass<B>>(KComponent: T): T {
     if (options) {
       Object.assign(KComponent, options);
     }
-    return (createComponent(KComponent) as unknown) as T;
+    return createComponent(KComponent) as unknown as T;
   }
   return decorator;
 }
 
 export function Component(options?: ComponentOptionsMixin) {
   function decorator<B, T extends ComponentClass<B>>(KComponent: T): T {
-    Reactive(KComponent)
+    Reactive(KComponent);
     if (options) {
       Object.assign(KComponent, options);
     }
-    return (createComponent(KComponent) as unknown) as T;
+    return createComponent(KComponent) as unknown as T;
   }
   return decorator;
 }
 
 export function ReactiveComponent(options?: ComponentOptionsMixin) {
-  return Component(options)
+  return Component(options);
 }
 
-
-
-export function createHook(
-  hook: (h: () => boolean | void, target?: ComponentInternalInstance | null) => unknown,
-) {
+export function createHook(hook: (h: () => boolean | void, target?: ComponentInternalInstance | null) => unknown) {
   return function <T extends GenericBean<T>>(): Decorator<T> {
     return createInitializerDecorator<T>((instance, constructor, callback, isStatic) => {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const callbackOwner = (isStatic ? constructor : instance) as any;
       hook(() => (callbackOwner[callback] as () => void)());
     }, 1010);

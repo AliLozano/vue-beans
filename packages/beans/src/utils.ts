@@ -33,9 +33,7 @@ export function getDescriptors<T>(instance: T): [string, PropertyDescriptor][] {
     'prototype',
   ];
 
-  return Object.entries(props).filter(
-    ([key, _]) => !key.startsWith('_') && !key.startsWith('$') && exclude.indexOf(key) < 0,
-  );
+  return Object.entries(props).filter(([key, _]) => !key.startsWith('_') && !key.startsWith('$') && exclude.indexOf(key) < 0);
 }
 
 /**
@@ -48,10 +46,7 @@ export function getDescriptors<T>(instance: T): [string, PropertyDescriptor][] {
  * @param original
  * @param descriptors
  */
-export function wrapFields(
-  original: { [id: string]: unknown },
-  descriptors: [string, PropertyDescriptor][],
-): Record<string, unknown> {
+export function wrapFields(original: { [id: string]: unknown }, descriptors: [string, PropertyDescriptor][]): Record<string, unknown> {
   const context: { [id: string]: unknown } = {};
 
   descriptors.forEach(([key, descriptor]) => {
@@ -66,7 +61,6 @@ export function wrapFields(
     } else if (descriptor.set) {
       // only setter ?? is it neccesary?.
     } else if (typeof descriptor.value === 'function') {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       context[key] = (...args: unknown[]) => (original[key] as any).call(original, ...args);
     } else if (isRef(original[key])) {
       context[key] = original[key];
@@ -89,11 +83,7 @@ export function wrapFields(
  * @param p
  * @param getter
  */
-export function defineGetter(
-  o: any,
-  p: PropertyKey,
-  getter: () => unknown,
-): void {
+export function defineGetter(o: any, p: PropertyKey, getter: () => unknown): void {
   Object.defineProperty(o, p, {
     get: getter,
     set: undefined,

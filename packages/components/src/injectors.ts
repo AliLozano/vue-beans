@@ -1,6 +1,6 @@
 import { Prop } from 'vue';
-import { createLazyProp } from "@vue-beans/beans";
-import { useProps } from "./functions";
+import { createLazyProp } from '@vue-beans/beans';
+import { useProps } from './functions';
 
 export function injectProp<T>(options?: Prop<T, T>): T;
 
@@ -15,4 +15,3 @@ export function injectProp<T>(arg1?: string | Prop<T, T>, arg2?: Prop<T, T>): T 
     return () => props[propName] as T;
   });
 }
-
