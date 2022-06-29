@@ -1,0 +1,40 @@
+name: Test and build main
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Test and build project
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: lts/gallium
+          cache: 'npm'
+
+      - name: NPM Install
+        run: npm install
+
+      - name: Eslint check
+        run: npm run lint
+
+      - name: Build
+        if: always()
+        run: npm run build
+
+
+
+
+
+
+
+
