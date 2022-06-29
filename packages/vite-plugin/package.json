@@ -1,6 +1,6 @@
 {
   "name": "@vue-beans/vite-plugin",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "",
   "main": "index.js",
   "module": "dist/vite-plugin.esm-bundler.js",

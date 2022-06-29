@@ -45,5 +45,5 @@ export function Loading<T extends GenericBean<T>>(loadingKey: keyof Required<T>)
         throw e;
       }
     };
-  });
+  }, 1000);
 }
