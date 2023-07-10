@@ -5,14 +5,23 @@
   "main": "index.js",
   "module": "dist/injections.esm-bundler.js",
   "types": "dist/injections.d.ts",
+  "unpkg": "dist/injections.global.js",
+  "jsdelivr": "dist/injections.global.js",
   "files": [
     "index.js",
     "dist"
   ],
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AliLozano/vue-beans.git",
     "directory": "packages/injections"
+  },
+  "buildOptions": {
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
   },
   "keywords": [
     "vue"
@@ -24,13 +33,13 @@
   },
   "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/injections#readme",
   "dependencies": {
-    "@vue-beans/beans": "0.1.12"
+    "@vue-beans/beans": "0.1.12",
+    "vue": "^3.3.4"
   },
   "devDependencies": {
-    "jest": "^26.6.3",
-    "vue": "^3.2.36"
+    "jest": "^26.6.3"
   },
   "peerDependencies": {
-    "vue": "^3.2.36"
+    "vue": "^3.3.4"
   }
 }

@@ -1,21 +1,25 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "dist",
+    "outDir": "temp",
     "sourceMap": false,
-    "target": "esnext",
+    "target": "es2016",
+    "newLine": "LF",
+    "useDefineForClassFields": false,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "allowJs": false,
     "strict": true,
     "noUnusedLocals": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
     "removeComments": false,
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
-    "types": ["jest", "puppeteer", "node"],
+    "types": ["vitest/globals", "puppeteer", "node"],
     "rootDir": ".",
     "paths": {
       "@vue-beans/*": ["packages/*/src"],
@@ -25,6 +29,10 @@
   "include": [
     "packages/global.d.ts",
     "packages/*/src",
+    "packages/runtime-dom/types/jsx.d.ts",
     "packages/*/__tests__",
+    "packages/dts-test",
+    "packages/vue/jsx-runtime",
+    "scripts/setupVitest.ts"
   ]
 }

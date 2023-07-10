@@ -5,14 +5,23 @@
   "main": "index.js",
   "module": "dist/beans.esm-bundler.js",
   "types": "dist/beans.d.ts",
+  "unpkg": "dist/beans.global.js",
+  "jsdelivr": "dist/beans.global.js",
   "files": [
     "index.js",
     "dist"
   ],
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AliLozano/vue-beans.git",
     "directory": "packages/beans"
+  },
+  "buildOptions": {
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
   },
   "keywords": [
     "vue"
@@ -23,11 +32,13 @@
     "url": "https://github.com/AliLozano/vue-beans/issues"
   },
   "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/beans#readme",
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
   "devDependencies": {
-    "jest": "^26.6.3",
-    "vue": "^3.2.36"
+    "jest": "^26.6.3"
   },
   "peerDependencies": {
-    "vue": "^3.2.36"
+    "vue": "^3.3.4"
   }
 }

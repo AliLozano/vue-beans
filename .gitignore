@@ -6,6 +6,9 @@ temp
 explorations
 TODOs.md
 *.log
+.eslintcache
+dts-build/packages
+*.tsbuildinfo
 
 # while I am editing
 /docs

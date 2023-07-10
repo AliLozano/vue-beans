@@ -1,6 +1,6 @@
 // builders.ts include all functions to build a bean.
-import { isProxy, isRef, reactive, shallowReactive } from 'vue';
-import { getDescriptors } from './utils';
+import { isProxy, isRef, reactive, shallowReactive } from 'vue'
+import { getDescriptors } from './utils'
 
 /**
  * Convert every function of the object to closure, with this you can make
@@ -11,13 +11,13 @@ import { getDescriptors } from './utils';
 export function remapFunctionsToClosures(obj: any) {
   getDescriptors(obj).forEach(([key, descriptor]) => {
     if (typeof descriptor.value === 'function') {
-      obj[key] = obj[key].bind(obj);
+      obj[key] = obj[key].bind(obj)
     }
-  });
-  return obj;
+  })
+  return obj
 }
 
-const isObject = (val: any) => val !== null && typeof val === 'object';
+const isObject = (val: any) => val !== null && typeof val === 'object'
 
 /**
  * Make a object reactive but keeping ref without unwrap.
@@ -28,10 +28,10 @@ const isObject = (val: any) => val !== null && typeof val === 'object';
 export function reactiveWithRefs(obj: any) {
   return new Proxy(shallowReactive(obj), {
     get(target: any, key: PropertyKey): any {
-      const res = target[key];
+      const res = target[key]
       // this works like normal reactive proxy, with the difference that this not unwrap refs.
-      if (!isObject(res) || isProxy(res) || isRef(res)) return res;
-      return reactive(res);
-    },
-  });
+      if (!isObject(res) || isProxy(res) || isRef(res)) return res
+      return reactive(res)
+    }
+  })
 }

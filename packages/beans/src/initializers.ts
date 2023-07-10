@@ -1,4 +1,10 @@
-import { GenericBean, BeanConstructor, BeanInitializer, BEFORE_SETUP, Decorator } from './types';
+import {
+  GenericBean,
+  BeanConstructor,
+  BeanInitializer,
+  BEFORE_SETUP,
+  Decorator
+} from './types'
 
 /**
  * @param instance instance where the initializer is applied
@@ -11,7 +17,7 @@ type DecoratorInitializer<T extends GenericBean<T>> = (
   constructor: typeof instance.constructor,
   attributeName: string,
   isStatic: boolean
-) => void;
+) => void
 
 /**
  * This method add an initializer for any class to be run before setup.
@@ -26,12 +32,12 @@ export function addInitializer<Type extends GenericBean<Type>>(
   initializer: BeanInitializer<Type>,
   overrideAll = false
 ): void {
-  constructor[BEFORE_SETUP] = constructor[BEFORE_SETUP] || {};
+  constructor[BEFORE_SETUP] = constructor[BEFORE_SETUP] || {}
 
   if (!constructor[BEFORE_SETUP]![priority] || overrideAll) {
-    constructor[BEFORE_SETUP]![priority] = [initializer];
+    constructor[BEFORE_SETUP]![priority] = [initializer]
   } else {
-    constructor[BEFORE_SETUP]![priority].push(initializer);
+    constructor[BEFORE_SETUP]![priority].push(initializer)
   }
 }
 
@@ -40,14 +46,17 @@ export function addInitializer<Type extends GenericBean<Type>>(
  * @param initializer function that runs on setup function of bean
  * @param priority priority of the initializer
  */
-export function createInitializerDecorator<T extends GenericBean<T>>(initializer: DecoratorInitializer<T>, priority = 2000): Decorator<T> {
+export function createInitializerDecorator<T extends GenericBean<T>>(
+  initializer: DecoratorInitializer<T>,
+  priority = 2000
+): Decorator<T> {
   function decorator(obj: T | BeanConstructor<T>, callback: string): void {
-    const isStatic = typeof obj === 'function';
-    const constructor = (isStatic ? obj : obj.constructor) as new () => T;
+    const isStatic = typeof obj === 'function'
+    const constructor = (isStatic ? obj : obj.constructor) as new () => T
 
     addInitializer(constructor, priority, (instance: T) => {
-      initializer(instance, instance.constructor, callback, isStatic);
-    });
+      initializer(instance, instance.constructor, callback, isStatic)
+    })
   }
-  return decorator;
+  return decorator
 }

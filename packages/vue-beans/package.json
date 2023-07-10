@@ -5,10 +5,19 @@
   "main": "index.js",
   "module": "dist/vue-beans.esm-bundler.js",
   "types": "dist/vue-beans.d.ts",
+  "unpkg": "dist/vue-beans.global.js",
+  "jsdelivr": "dist/vue-beans.global.js",
   "files": [
     "index.js",
+    "index.mjs",
     "dist"
   ],
+  "buildOptions": {
+    "formats": [
+      "esm-bundler",
+      "cjs"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AliLozano/vue-beans.git",
@@ -24,6 +33,7 @@
   },
   "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/beans#readme",
   "dependencies": {
+    "vue": "^3.3.4",
     "@vue-beans/beans": "0.1.12",
     "@vue-beans/components": "0.1.12",
     "@vue-beans/injections": "0.1.12",
@@ -31,10 +41,15 @@
     "@vue-beans/vite-plugin": "0.1.12"
   },
   "devDependencies": {
-    "jest": "^26.6.3",
-    "vue": "^3.2.36"
+    "jest": "^26.6.3"
   },
   "peerDependencies": {
-    "vue": "^3.2.36"
+    "vue": "^3.3.4",
+    "typescript": "*"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   }
 }
