@@ -2,8 +2,8 @@
   "name": "dts-test",
   "private": true,
   "dependencies": {
-    "@vue-beans/beans": "0.1.12",
-    "@vue-beans/injections": "0.1.12"
+    "@vue-beans/beans": "0.2.0",
+    "@vue-beans/injections": "0.2.0"
   },
-  "version": "0.1.12"
+  "version": "0.2.0"
 }
