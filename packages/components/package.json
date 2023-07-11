@@ -1,6 +1,6 @@
 {
   "name": "@vue-beans/components",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "main": "index.js",
   "module": "dist/components.esm-bundler.js",
@@ -33,8 +33,8 @@
   },
   "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/components#readme",
   "dependencies": {
-    "@vue-beans/beans": "0.2.0",
-    "@vue-beans/decorators": "0.2.0",
+    "@vue-beans/beans": "0.2.1",
+    "@vue-beans/decorators": "0.2.1",
     "vue": "^3.2.36"
   },
   "devDependencies": {

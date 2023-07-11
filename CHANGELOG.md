@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/AliLozano/vue-beans/compare/v0.2.0...v0.2.1) (2023-07-11)
+
+
+### Bug Fixes
+
+* Generic Bean type ([eeaab15](https://github.com/AliLozano/vue-beans/commit/eeaab15d2d668fdb8a77394c4c47fdf7e48f84ab))
+
+
+
 # [0.2.0](https://github.com/AliLozano/vue-beans/compare/v0.1.12...v0.2.0) (2023-07-10)
 
 
