@@ -65,12 +65,7 @@ export type Bean = {
 
 type PartialRecord<K extends keyof any, T> = { [P in K]?: T }
 
-export type GenericBean<T> = PartialRecord<keyof T, unknown> & {
-  constructor: Function
-  beforeSetup?: (...args: unknown[]) => void
-  setup?: (...args: unknown[]) => void
-  eventbus?: EventBus<unknown>
-}
+export type GenericBean<T> = PartialRecord<keyof T, unknown> & Bean
 
 export declare type BeanInitializer<T extends GenericBean<T>> = (
   instance: T

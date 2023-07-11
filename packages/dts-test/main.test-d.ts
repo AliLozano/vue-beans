@@ -1,7 +1,8 @@
-import { describe } from './utils'
+import { describe, expectType } from './utils'
+import { injectService } from '@vue-beans/injections'
 
 describe('injectService', () => {
-  // class Service{}
-  // const attrs = injectService<Service>()
-  // expectType<Record<string, unknown>>(attrs)
+  class Service {}
+  const service = injectService(Service)
+  expectType<Service>(service)
 })
