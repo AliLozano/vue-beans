@@ -33,15 +33,15 @@
   },
   "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/vite-plugin#readme",
   "dependencies": {
-    "vue": "^3.3.4",
-    "vite": "^4.4.2"
+    "vue": "^3.2.36",
+    "vite": "^2.7.0 || ^3.0.0 || ^4.0.0"
   },
   "devDependencies": {
     "jest": "^26.6.3",
     "es-module-lexer": "^0.3.25"
   },
   "peerDependencies": {
-    "vue": "^3.3.4",
-    "vite": "^4.4.2"
+    "vue": "^3.2.36",
+    "vite": "^2.7.0 || ^3.0.0 || ^4.0.0"
   }
 }

@@ -34,12 +34,12 @@
   "homepage": "https://github.com/AliLozano/vue-beans/tree/master/packages/injections#readme",
   "dependencies": {
     "@vue-beans/beans": "0.2.0",
-    "vue": "^3.3.4"
+    "vue": "^3.2.36"
   },
   "devDependencies": {
     "jest": "^26.6.3"
   },
   "peerDependencies": {
-    "vue": "^3.3.4"
+    "vue": "^3.2.36"
   }
 }
